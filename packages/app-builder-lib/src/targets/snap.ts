@@ -57,7 +57,7 @@ export default class SnapTarget extends Target {
       isArrayEqualRegardlessOfSort(stagePackages, defaultStagePackages)
 
     const appDescriptor: any = {
-      command: "command.sh",
+      command: `$SNAP/${appInfo}`,
       plugs: plugNames,
       adapter: "none",
     }
